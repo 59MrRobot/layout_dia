@@ -1,6 +1,10 @@
-@mixin hover($_property, $_toValue) {
-  transition: #{$_property} 0.3s;
-  &:hover {
-    #{$_property}: $_toValue;
-  }
+@mixin limitContentWidth() {
+  margin: 0 auto;
+  max-width: $maxContentWidth;
+}
+
+@mixin fontParams($size, $lineHeight, $weight: 400) {
+  font-size: $size;
+  line-height: $lineHeight;
+  font-weight: $weight;
 }
