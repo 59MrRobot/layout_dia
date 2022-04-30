@@ -1,0 +1,72 @@
+.service {
+  padding: 32px;
+
+  border-radius: 16px;
+
+  box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
+  background-color: #fff;
+
+  &:nth-child(even) {
+    transform: translateY(-50%);
+  }
+
+  @include tablet {
+    width: 264px;
+  }
+
+  @include desktop {
+    width: 214px;
+  }
+
+  @include desktopBiggest {
+    width: 264px;
+  }
+
+  &__number {
+    @include fontParams(13px, 20px, 600);
+    font-family: "Poppins", sans-serif;
+
+    padding: 2px 12px;
+    width: 46px;
+
+    border-radius: 23px;
+
+    background-color: rgba(32, 96, 246, 0.1);
+    color: $c-blue;
+  }
+
+  &__info {
+    margin-top: 24px;
+
+    color: $c-grey;
+  }
+
+  &__learn-more {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    margin-top: 32px;
+    height: 40px;
+
+    &--button {
+      width: 40px;
+      height: 40px;
+
+      border: none;
+      border-radius: 50%;
+
+      background-color: $c-blue;
+
+      background-image: url("/images/icons/arrow.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+
+      cursor: pointer;
+    }
+
+    &--text {
+      color: #334563;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 .who-we-are {
   padding: 120px $padding;
 
-  background-color: #f2f6fa;
+  background-color: $c-bgc;
 
   @include tablet {
     padding: 148px $paddingTablet;
