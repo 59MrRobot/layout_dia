@@ -1,21 +1,24 @@
 .service {
   padding: 32px;
+  width: 280px;
 
   border-radius: 16px;
 
   box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
   background-color: #fff;
 
-  &:nth-child(even) {
-    transform: translateY(-50%);
-  }
-
   @include tablet {
     width: 264px;
+
+    &:nth-child(even) {
+      transform: translateY(-50%);
+    }
   }
 
   @include desktop {
     width: 214px;
+
+    padding-right: 30px;
   }
 
   @include desktopBiggest {
@@ -37,6 +40,8 @@
 
   &__info {
     margin-top: 24px;
+
+    @include fontParams(13px, 150%, 600);
 
     color: $c-grey;
   }
