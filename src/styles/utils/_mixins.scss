@@ -24,9 +24,5 @@
 
 @mixin limitContentWidth() {
   margin: 0 auto;
-  max-width: $maxContentWidth;
-
-  @include tablet {
-    max-width: $maxContentWidthTablet;
-  }
+  max-width: $maxContentWidthDesktopBiggest;
 }

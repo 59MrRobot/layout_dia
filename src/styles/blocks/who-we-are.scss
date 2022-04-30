@@ -1,0 +1,40 @@
+.who-we-are {
+  padding: 120px $padding;
+
+  background-color: #f2f6fa;
+
+  @include tablet {
+    padding: 148px $paddingTablet;
+  }
+
+  @include desktop {
+    padding-left: 154px;
+    padding-right: 154px;
+  }
+
+  @include desktopBiggest {
+    padding-left: 423px;
+    padding-right: 423px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include limitContentWidth;
+  }
+
+  &__text {
+    margin-top: 24px;
+
+    @include fontParams(22px, 150%, 600);
+    color: $c-grey;
+
+    text-align: center;
+
+    @include tablet {
+      margin-top: 16px;
+    }
+  }
+}
