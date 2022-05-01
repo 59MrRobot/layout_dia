@@ -1,0 +1,63 @@
+.vision-passion-results {
+  padding: 72px $padding;
+
+  @include tablet {
+    padding: 200px $paddingTablet;
+  }
+
+  @include desktop {
+    padding: 200px 136px;
+  }
+
+  @include desktopBiggest {
+    padding: 200px 423px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include limitContentWidth;
+  }
+
+  &__title {
+    @include fontParams(44px, 120%, 600);
+
+    text-align: center;
+
+    @include tablet {
+      @include fontParams(52px, 120%, 600);
+    }
+
+    @include desktop {
+      line-height: 150%;
+    }
+  }
+
+  &__text {
+    margin-top: 24px;
+
+    @include fontParams(22px, 150%, 600);
+    color: $c-grey;
+
+    text-align: center;
+
+    @include tablet {
+      font-size: 24px;
+    }
+  }
+
+  &__button {
+    margin-top: 56px;
+
+    width: 100%;
+    height: 56px;
+
+    @include tablet {
+      margin-top: 64px;
+
+      width: 264px;
+    }
+  }
+}
