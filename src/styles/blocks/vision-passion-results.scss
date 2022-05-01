@@ -51,12 +51,8 @@
   &__button {
     margin-top: 56px;
 
-    width: 100%;
-
     @include tablet {
       margin-top: 64px;
-
-      width: 264px;
     }
   }
 }

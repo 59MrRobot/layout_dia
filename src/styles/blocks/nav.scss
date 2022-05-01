@@ -1,4 +1,11 @@
 .nav {
+  &--desktop {
+    display: none;
+
+    @include desktop {
+      display: unset;
+    }
+  }
   &__list {
     display: flex;
     flex-direction: column;
@@ -16,7 +23,15 @@
     }
 
     @include desktop {
-      gap: 64px;
+      gap: 48px;
+    }
+
+    &--menu {
+      @include tablet {
+        flex-direction: column;
+
+        margin-top: 48px;
+      }
     }
   }
 

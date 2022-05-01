@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dia</title>
+    <title>Air</title>
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
-  <body>
+  <body class="page">
     <header class="header">
       <div class="header__wrapper">
         <div class="header__controls">
@@ -15,11 +15,31 @@
               <img src="/images/icons/logo.svg" alt="dia logo">
             </a>
 
-            <a href="#">
+            <a href="#menu" class="header__menu-toggler">
               <img src="/images/icons/menu.svg" alt="menu icon">
             </a>
           </div>
 
+          <nav class="nav nav--desktop">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#who-we-are" class="nav__link">About Us</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#work" class="nav__link">Work</a>
+              </li>
+              <li class="nav__item">
+                <a href="#services" class="nav__link">Services</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contact-us" class="nav__link">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+          
           <a href="#" class="header__controls--link">Hire us</a>
         </div>
 
@@ -83,6 +103,40 @@
         </div>
       </div>
     </header>
+
+    <section class="menu" id="menu">
+      <div class="menu__wrapper">
+        <div class="menu__controls">
+          <a href="#" class="logo">
+            <img src="/images/icons/logo.svg" alt="dia logo">
+          </a>
+
+          <a href="#">
+            <img src="/images/icons/menu.svg" alt="menu icon">
+          </a>
+        </div>
+
+        <nav class="nav">
+          <ul class="nav__list nav__list--menu">
+            <li class="nav__item">
+              <a href="#who-we-are" class="nav__link nav__link--header">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link nav__link--header">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link nav__link--header">Work</a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link nav__link--header">Services</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact-us" class="nav__link nav__link--header">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
 
     <main class="main-info">
       <section class="who-we-are" id="who-we-are">

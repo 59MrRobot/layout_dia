@@ -4,52 +4,22 @@
   padding: 21px $padding 0;
 
   @include tablet {
-    // padding-left: $paddingTablet;
-    // padding-right: $paddingTablet;
-
     padding: 21px $paddingTablet 0;
   }
 
   @include desktop {
-    // padding-left: $paddingDesktop;
-    // padding-right: $paddingDesktop;
-
     padding: 21px $paddingDesktop 0;
   }
 
   @include desktopBiggest {
-    // padding-left: $paddingDesktopBiggest;
-    // padding-right: $paddingDesktopBiggest;
-
     padding: 21px $paddingDesktopBiggest 0;
-
-    // margin: 0 auto;
   }
 
   background: $c-black;
 
   &__wrapper {
-    padding-left: $padding;
-    padding-right: $padding;
 
     @include limitContentWidth;
-
-    // @include tablet {
-    //   padding-left: $paddingTablet;
-    //   padding-right: $paddingTablet;
-    // }
-
-    // @include desktop {
-    //   padding-left: $paddingDesktop;
-    //   padding-right: $paddingDesktop;
-    // }
-
-    // @include desktopBiggest {
-    //   padding-left: $paddingDesktopBiggest;
-    //   padding-right: $paddingDesktopBiggest;
-
-    //   margin: 0 auto;
-    // }
 
     display: flex;
     flex-direction: column;
@@ -68,11 +38,7 @@
     align-items: center;
 
     @include desktop {
-      padding-right: $paddingDesktop;
-    }
-
-    @include desktopBiggest {
-      padding-right: $paddingDesktopBiggest;
+      gap: 114px;
     }
 
     &--icons {
@@ -104,6 +70,12 @@
         border-radius: 4px;
         background-color: $c-blue;
       }
+    }
+  }
+
+  &__menu-toggler {
+    @include desktop {
+      display: none;
     }
   }
 
@@ -145,10 +117,10 @@
   &__button {
     margin-top: 72px;
 
+    width: 100%;
+
     @include tablet {
       margin-top: 56px;
-
-      width: 264px;
     }
 
     @include desktop {
