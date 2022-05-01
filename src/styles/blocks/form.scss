@@ -1,0 +1,51 @@
+.form {
+  &__field {
+    margin-top: 40px;
+    padding-bottom: 16px;
+    width: 100%;
+
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgba($color: #fff, $alpha: 0.7);
+
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+
+    @include fontParams(15px, 22px, 600);
+    background-color: transparent;
+
+    transition: border-color $transitionDuration;
+
+    @include tablet {
+      margin-top: 48px;
+    }
+
+    &::placeholder {
+      font-family: "Poppins", sans-serif;
+      color: rgba($color: #fff, $alpha: 0.7);
+    }
+
+    &:hover {
+      border-color: $c-blueForm;
+    }
+
+    &:focus {
+      border-color: $c-blueForm;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__button {
+    margin-top: 56px;
+
+    width: 100%;
+
+    @include tablet {
+      margin-top: 80px;
+      width: 264px;
+    }
+  }
+}

@@ -85,7 +85,7 @@
     </header>
 
     <main class="main-info">
-      <section class="who-we-are">
+      <section class="who-we-are" id="who-we-are">
         <div class="who-we-are__wrapper">
           <h2 class="title who-we-are__title">Who we are</h2>
 
@@ -95,7 +95,7 @@
         </div>
       </section>
 
-      <section class="our-expertise">
+      <section class="our-expertise" id="work">
         <div class="our-expertise__wrapper">
           <h2 class="title our-expertise__title">Our expertise</h2>
 
@@ -142,7 +142,7 @@
         </div>
       </section>
 
-      <section class="process">
+      <section class="process" id="services">
         <div class="process__wrapper">
           <h4 class="subtitle process__subtitle">Services</h4>
 
@@ -317,6 +317,111 @@
         </div>
       </section>
     </main>
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__sections">
+          <section class="message">
+            <div class="message__wrapper">
+              <h2 class="title message__title">Send us  a message</h2>
+
+              <form
+                action="#"
+                method="get"
+                class="form message__form"
+              >
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your email"
+                  class="form__field">
+
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                  class="form__field">
+
+                <input
+                  type="text"
+                  name="message"
+                  placeholder="Your message"
+                  class="form__field">
+
+                <button class="button form__button">Send</button>
+              </form>
+            </div>
+          </section>
+
+          <section class="contact-us" id="contact-us">
+            <div class="contact-us__wrapper">
+              <h2 class="title contact-us__title">Contact us</h2>
+
+              <div class="contact-us__content">
+                <div class="contact-us__container">
+                  <h4 class="subtitle contact-us__subtitle">Call us</h4>
+                  <a
+                    href="tel:654-321-987"
+                    class="contact-us__link"
+                  >
+                    654 321 987
+                  </a>
+                </div>
+
+                <div class="contact-us__container">
+                  <h4 class="subtitle contact-us__subtitle">Visit us</h4>
+                  <a
+                    href="https://goo.gl/maps/rYRVqy61YHPfC9LM9" class="contact-us__link"
+                  >
+                    2905 West Drive, Buffalo Grove
+                  </a>
+                </div>
+
+                <div class="contact-us__container">
+                  <h4 class="subtitle contact-us__subtitle">our socials</h4>
+                  <div class="contact-us__socials">
+                    <a href="#" class="contact-us__socials--link contact-us__socials--link--facebook">
+                    </a>
+
+                    <a href="#" class="contact-us__socials--link contact-us__socials--link--twitter">
+                    </a>
+
+                    <a href="#" class="contact-us__socials--link contact-us__socials--link--instagram">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="footer__controls">
+          <a href="#" class="logo">
+            <img src="/images/icons/logo.svg" alt="dia logo">
+          </a>
+
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#who-we-are" class="nav__link">About Us</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#work" class="nav__link">Work</a>
+              </li>
+              <li class="nav__item">
+                <a href="#services" class="nav__link">Services</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contact-us" class="nav__link">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

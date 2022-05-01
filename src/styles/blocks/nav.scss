@@ -1,0 +1,38 @@
+.nav {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    margin-top: 48px;
+
+    list-style: none;
+
+    @include tablet {
+      flex-direction: row;
+      gap: 40px;
+
+      margin-top: 24px;
+    }
+
+    @include desktop {
+      gap: 64px;
+    }
+  }
+
+  &__link {
+    @include fontParams(13px, 150%, 700);
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    transition: color $transitionDuration;
+
+    &:hover {
+      color: $c-blue;
+    }
+  }
+}
