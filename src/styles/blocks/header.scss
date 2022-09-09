@@ -1,28 +1,27 @@
 .header {
   position: relative;
 
-  padding: 21px $padding 0;
-
-  @include tablet {
-    padding: 21px $paddingTablet 0;
-  }
-
-  @include desktop {
-    padding: 21px $paddingDesktop 0;
-  }
-
-  @include desktopBiggest {
-    padding: 21px $paddingDesktopBiggest 0;
-  }
-
   background: $c-black;
 
   &__wrapper {
-
     @include limitContentWidth;
 
     display: flex;
     flex-direction: column;
+
+    padding: 21px $padding 0;
+
+    @include tablet {
+      padding: 21px $paddingTablet 0;
+    }
+
+    @include desktop {
+      padding: 21px $paddingDesktop 0;
+    }
+
+    @include desktopBiggest {
+      padding: 21px $paddingDesktopBiggest 0;
+    }
   }
 
   &__content {
@@ -39,6 +38,8 @@
 
     @include desktop {
       gap: 114px;
+
+      grid-row: 1 / 2;
     }
 
     &--icons {
@@ -129,6 +130,10 @@
   }
 
   &__slider {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
     margin-top: 48px;
 
     @include tablet {
@@ -136,6 +141,9 @@
     }
 
     @include desktop {
+      width: 502px;
+      height: 680px;
+
       display: none;
     }
 

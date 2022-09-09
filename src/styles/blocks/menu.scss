@@ -1,0 +1,28 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+
+  padding: 21px $padding 0;
+
+  background-color: $c-black;
+
+  transform: translateX(-100%);
+  transition: transform $transitionDuration ease-in-out;
+
+  @include tablet {
+    padding: 21px $paddingTablet 0;
+  }
+
+  &:target {
+    transform: translateX(0);
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+}

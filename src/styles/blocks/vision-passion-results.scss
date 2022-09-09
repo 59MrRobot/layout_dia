@@ -1,6 +1,10 @@
 .vision-passion-results {
   padding: 72px $padding;
 
+  background-image: url("/images/Shapes.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
   @include tablet {
     padding: 200px $paddingTablet;
   }
