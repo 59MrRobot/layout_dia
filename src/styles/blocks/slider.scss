@@ -1,5 +1,30 @@
 .slider {
   position: relative;
+  bottom: -3px;
+
+  @include tablet {
+    bottom: -4px;
+  }
+
+  &--desktop {
+    display: none;
+
+    @include desktop {
+      display: unset;
+
+      right: -56px;
+      bottom: -3.5px;
+    }
+
+    @include desktopBiggest {
+
+      right: -228px;
+    }
+
+    @media (min-width: 2560px) {
+      right: -325px;
+    }
+  }
 
   &__img {
     width: 100%;
@@ -11,12 +36,24 @@
     object-position: center;
 
     @include desktop {
-      width: 100%;
+      width: 502px;
       height: 680px;
+
+      border-radius: 0;
+      border-bottom-right-radius: 30px;
+      border-top-left-radius: 30px;
     }
 
     @include desktopBiggest {
-      min-height: 800px;
+      width: 687px;
+    }
+
+    @media (min-width: 2560px) {
+      width: 1167px;
+    }
+
+    &--desktop {
+      border-radius: none;
     }
   }
 
